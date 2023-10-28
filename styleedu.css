@@ -1,0 +1,263 @@
+body{
+    background: url(background1.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.header{
+    background: url(background2.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    padding:20px;
+    background-size: 3000px;
+}
+
+.header img{
+    width:4vh;
+    display:inline;
+}
+
+.nav{
+    overflow: hidden;
+    background: url(background3.jpg);
+    height: 40px;
+    padding: 5px;
+}
+
+.nav a{
+    float:right;
+    display:block;
+    color:aliceblue;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Lucida Sans;
+    font-size: 18px;
+}
+
+.nav a:hover{
+    color:darkblue;
+    background-color: aliceblue;
+}
+
+#education{
+    color:darkblue;
+    background-color: aliceblue;
+}
+
+.column{
+    float:left;
+    width:49%;
+    padding:5px;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    color:#04122E;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column a{
+    color:#04122E;
+}
+
+.column a:hover{
+    color: burlywood;
+}
+
+.column img{
+    width:13vw;
+    margin:30px auto;
+    display:inline-flex;
+    flex-direction: row;
+}
+
+#binus{
+    width:23vw;
+    margin-left: 50px;
+}
+
+.checkbox_logo{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.checkbox_logo img{
+    width:7vw;
+    margin:50px 15px;
+    display:inline-flex;
+    flex-direction: row;
+}
+
+input[type="checkbox"]{
+    width:20px;
+    height: 20px;
+}
+
+.footer{
+    text-align: center;
+    background:url(background3.jpg);
+    background-repeat: no-repeat;
+    height:max-content;
+    background-size:cover ;
+    padding:3px;
+    margin-top: 50px;
+    font-family:lucida sans;
+    color: aliceblue;
+    
+}
+
+.footer figure{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width:2000px){
+    .footer{
+        font-size: 24px;
+    }
+    .header, .column{
+        font-size: 30px;
+    }
+    .column img{
+        width: 10vw;
+    }
+    #binus{
+        width: 17vw;
+        margin-top: -15px;
+    }
+    .checkbox_logo img{
+        width: 6vw;
+    }
+    input[type="checkbox"]{
+        width:30px;
+        height: 30px;
+    }
+    .nav{
+        height: 50px;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .column img{
+        width: 18vw;
+        display:inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .column{
+        width:100%;
+    }
+    #binus{
+        width: 28vw;
+        margin-top: -40px;
+    }
+    .checkbox_logo img{
+        width: 9vw;
+        margin: 40px 30px;
+    }
+    input[type="checkbox"]{
+        width:18px;
+        height: 18px;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+    .header, .column{
+        font-size: 18px;
+    }
+    .column{
+        text-align: center;
+    }
+    .nav a{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .header, .column, .footer{
+        font-size: 16px;
+    }
+    .column img{
+        width: 22vw;
+        display:inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #binus{
+        width: 35vw;
+        margin-top: -80px;
+    }
+    .checkbox_logo img{
+        width: 11vw;
+        margin: 30px 20px;
+    }
+    input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+    }
+    .footer{
+        margin-top: 60px;
+    }
+    .nav a{
+        font-size: 12px;
+        padding: 10px 7px;
+    }
+    .nav{
+        height: 30px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 401px){
+    .header, .column, .footer{
+        font-size: 16px;
+    }
+    .column img{
+        width: 29vw;
+        margin: 10px 20px; 
+    }
+    .column{
+        margin-bottom: 10px;
+    }
+    #binus{
+        width: 40vw;
+        margin-top: 10px;
+    }
+    .checkbox_logo img{
+        width: 15vw;
+        margin: 15px 15px;
+    }
+    input[type="checkbox"]{
+        width: 14px;
+        height: 14px;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+    .nav a{
+        font-size: 11px;
+        padding: 10px 7px;
+    }
+    .nav{
+        height: 30px;
+        padding: 0px;
+    }
+}

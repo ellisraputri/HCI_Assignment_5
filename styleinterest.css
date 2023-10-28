@@ -1,0 +1,215 @@
+body{
+    background: url(background1.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.header{
+    background: url(background2.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    padding:20px;
+    background-size: 3000px;
+}
+
+.header img{
+    width:4vh;
+    display:inline;
+}
+
+.nav{
+    overflow: hidden;
+    background: url(background3.jpg);
+    height: 40px;
+    padding: 5px;
+}
+
+.nav a{
+    float:right;
+    display:block;
+    color:aliceblue;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Lucida Sans;
+}
+
+.nav a:hover{
+    color:darkblue;
+    background-color: aliceblue;
+}
+
+#interests{
+    color:darkblue;
+    background-color: aliceblue;
+}
+
+.column{
+    float:left;
+    width:45%;
+    padding:2px;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    color:#04122E;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.books,.games{
+    border: 3px solid #04122E;
+    margin:20px 15px;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.books img{
+    width: 8vw;
+    margin-left:auto;
+}
+
+.games img{
+    width:9vw;
+    margin: 10px 10px;
+}
+
+.footer{
+    text-align: center;
+    background:url(background3.jpg);
+    background-repeat: no-repeat;
+    height:max-content;
+    background-size:cover ;
+    padding:3px;
+    margin-top: 50px;
+    font-family:lucida sans;
+    color: aliceblue;
+    
+}
+
+.footer figure{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width:2000px){
+    .footer{
+        font-size: 24px;
+    }
+    .header, .column{
+        font-size: 30px;
+    }
+    .books img{
+        width: 6vw;
+    }
+    .games img{
+        width: 8vw;
+    }
+    .nav{
+        height: 50px;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .column{
+        width:100%;
+    }
+    .books img{
+        width: 14vw;
+    }
+    .games img{
+        width: 16vw;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+    .header, .column{
+        font-size: 18px;
+    }
+    .column{
+        text-align: center;
+    }
+    .nav a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .header, .column, .footer{
+        font-size: 16px;
+    }
+    .column{
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .books img{
+        margin-top: 10px;
+        width: 18vw;
+    }
+    .games img{
+        margin-top: 10px;
+        width: 22vw;
+    }
+    .footer{
+        margin-top: 60px;
+    }
+    .nav a{
+        font-size: 12px;
+        padding: 10px 7px;
+    }
+    .nav{
+        height: 30px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header, .column, .footer{
+        font-size: 16px;
+    }
+    .column img{
+        width: 29vw;
+        margin: 10px 20px; 
+    }
+    .column{
+        margin-bottom: 10px;
+    }
+    .books img{
+        margin-top: 10px;
+        width: 28vw;
+    }
+    .games img{
+        margin-top: 10px;
+        width: 24vw;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+    .nav a{
+        font-size: 11px;
+        padding: 10px 7px;
+    }
+    .nav{
+        height: 30px;
+        padding: 0px;
+    }
+}
